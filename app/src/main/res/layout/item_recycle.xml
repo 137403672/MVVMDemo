@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.wangwei.mvvmdemo.model.EntityModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/item_iv"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:imageUrl="@{viewModel.imgUrl}"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:id="@+id/item_tv"
+                android:text="@{viewModel.innerModel.content}"
+                android:layout_toRightOf="@+id/item_iv"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>
