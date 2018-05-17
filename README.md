@@ -1,3 +1,3 @@
 # MVVMDemo
 android mvvm demo
-´ò·¢
+kotlin å®Œæ•´ç‰ˆ
